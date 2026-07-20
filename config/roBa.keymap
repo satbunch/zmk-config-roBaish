@@ -9,9 +9,6 @@
 };
 
 &trackball {
-    automouse-layer = <4>;
-    scroll-layers = <5>;
-
     // arrows {
     //     layers = <3>;
     //     bindings =
@@ -40,8 +37,8 @@
             key-positions = <12 13>;
         };
 
-        muhennkann {
-            bindings = <&to_layer_0 INT_MUHENKAN>;
+        eisu {
+            bindings = <&to_layer_0 LANG2>;
             key-positions = <11 10>;
         };
 
