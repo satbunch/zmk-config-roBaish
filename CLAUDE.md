@@ -10,7 +10,7 @@
 ```
 #include群
 &mt { ... }         // hold-tapのフレーバー設定
-&trackball { ... }  // トラックボール設定
+&trackball { ... }  // トラックボール設定（automouse-layer, scroll-layersなど）
 / {
     combos { ... }     // コンボ定義
     macros { ... }     // マクロ定義
@@ -19,10 +19,12 @@
 };
 ```
 
-- **`keymap { }` ノード配下（各レイヤーの `bindings`）** → KeymapEditor（Web GUI）で編集する。ユーザーが確認しながら設定するため、Claudeはここを直接編集しない。
-- **それ以外**（`combos`, `macros`, `behaviors`, `&trackball` のプロパティ、`boards/shields/roBa/` 配下のハードウェア定義など）→ KeymapEditorの対象外なので、リポジトリを直接編集してよい。
+KeymapEditor（Web GUI, nickcoutsos製）には LAYERS / CONDITIONAL LAYERS / COMBOS / MACROS / BEHAVIORS のタブがあり、**`config/roBa.keymap` の大部分（keymap, combos, macros, behaviors）はGUIでカバーされる**。
 
-作業時は、変更が `keymap{}` ノード内かどうかを必ず確認し、ノード内の変更が必要な場合はユーザーに確認する。
+- **KeymapEditorで編集する（Claudeは触らない）**: `keymap{}`（各レイヤーのbindings）、`combos{}`、`macros{}`、`behaviors{}`（カスタムhold-tapビヘイビアの追加・変更含む）。ユーザーが確認しながら設定する。
+- **Claudeが直接編集してよい**: `&trackball {}` のプロパティ（`automouse-layer`, `scroll-layers` など、GUIのどのタブにも該当しないポインティングデバイス固有設定）、および `boards/shields/roBa/` 配下のハードウェア定義（`.dtsi`, `.overlay`, `.conf`, `Kconfig*`）、`config/west.yml`, `build.yaml`, CI(`.github/workflows/`)など。
+
+作業時は、変更が `keymap{}`/`combos{}`/`macros{}`/`behaviors{}` のいずれかに該当するかを必ず確認し、該当する場合はユーザーに確認する（KeymapEditor側での対応を促す）。
 
 ## ZMK Studio との関係
 
