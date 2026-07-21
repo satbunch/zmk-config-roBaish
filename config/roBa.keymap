@@ -30,24 +30,24 @@
             key-positions = <11 12>;
         };
 
-        shift_tab {
-            bindings = <&kp LS(TAB)>;
-            key-positions = <12 13>;
+        escape {
+            bindings = <&kp LS(ESCAPE)>;
+            key-positions = <2 3>;
         };
 
         eisu {
             bindings = <&to_layer_0 LANG2>;
-            key-positions = <11 10>;
+            key-positions = <13 12>;
         };
 
-        double_quotation {
-            bindings = <&kp DOUBLE_QUOTES>;
-            key-positions = <20 21>;
+        minus {
+            bindings = <&kp MINUS>;
+            key-positions = <20 19>;
         };
 
-        eq {
-            bindings = <&kp EQUAL>;
-            key-positions = <24 25>;
+        kana {
+            bindings = <&to_layer_0 LANG1>;
+            key-positions = <18 19>;
         };
     };
 
