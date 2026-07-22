@@ -8,6 +8,8 @@
 };
 
 &trackball {
+    scroll-layers = <4>;
+
     // arrows {
     //     layers = <3>;
     //     bindings =
@@ -109,6 +111,15 @@
 &kp F6   &kp F7   &kp F8  &kp F9  &kp F10  &trans      &trans  &kp C_VOLUME_DOWN  &mkp MB1  &msc MOVE_X(0)  &mkp MB2  &trans
 &kp F11  &kp F12  &trans  &trans  &trans   &trans      &trans  &trans             &trans    &msc MOVE_Y(0)  &trans    &trans
 &trans   &trans   &trans  &trans  &trans   &trans      &trans  &trans                                                 &trans
+            >;
+        };
+
+        SCROLL {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
             >;
         };
     };
