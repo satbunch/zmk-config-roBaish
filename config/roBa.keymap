@@ -79,8 +79,8 @@
         BASE {
             bindings = <
 &kp Q      &kp W         &kp E             &kp R                        &kp T                                                          &kp Y        &kp U  &kp I      &kp O    &kp P
-&kp A      &kp S         &kp D             &kp F                        &kp G                 &kp LS(LG(S))        &kp LG(LEFT_SHIFT)  &kp H        &kp J  &kp K      &kp L    &lt 3 SEMICOLON
-&kp Z      &kp X         &kp C             &kp V                        &kp B                 &kp LG(SPACE)        &kp SEMICOLON       &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
+&kp A      &kp S         &kp D             &kp F                        &kp G                 &kp LS(LG(S))        &kp RIGHT_GUI       &kp H        &kp J  &kp K      &kp L    &lt 3 SEMICOLON
+&kp Z      &kp X         &kp C             &kp V                        &kp B                 &kp LG(SPACE)        &kp LG(LEFT_SHIFT)  &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
 &kp LCTRL  &kp LEFT_ALT  &kp LEFT_COMMAND  &lt_to_layer_0 1 LANGUAGE_2  &mt LEFT_SHIFT SPACE  &mt LCTRL LANG1      &kp BACKSPACE       &lt 2 ENTER                             &kp DEL
             >;
 
